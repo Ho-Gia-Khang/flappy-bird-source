@@ -1,3 +1,6 @@
+#The original code as well as the images and sounds come from https://www.youtube.com/watch?v=mFbdfXWmLU8&ab_channel=CodeXplore
+#I've just optimized and balanced the game
+
 import pygame
 import sys
 import random
