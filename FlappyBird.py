@@ -145,9 +145,10 @@ while running:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
-        if event.type == MOUSEBUTTONDOWN:
-            start_screen.fill(TRANSPARENT)
-            game_loop = True
+        if event.type == KEYDOWN:
+            if event.key == K_SPACE:
+                start_screen.fill(TRANSPARENT)
+                game_loop = True
         if game_loop:
             if event.type == KEYDOWN:
                 if event.key == K_SPACE and game_active == True:
