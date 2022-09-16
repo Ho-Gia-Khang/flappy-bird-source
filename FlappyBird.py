@@ -101,11 +101,11 @@ game_over_screen_pos = game_over_screen.get_rect(center = (216, 300))
 
 # set up the game play
 bird_up = pygame.image.load('yellowbird_upflap.png').convert_alpha()
-bird_up = pygame.transform.scale2x(bird_up)
+bird_up = pygame.transform.scale(bird_up, (59.5, 42))
 bird_mid = pygame.image.load('yellowbird_midflap.png').convert_alpha()
-bird_mid = pygame.transform.scale2x(bird_mid)
+bird_mid = pygame.transform.scale(bird_mid, (59.5, 42))
 bird_down = pygame.image.load('yellowbird_downflap.png').convert_alpha()
-bird_down = pygame.transform.scale2x(bird_down)
+bird_down = pygame.transform.scale(bird_down, (59.5, 42))
 bird_list = [bird_up, bird_mid, bird_down]
 bird_index = 0
 bird = bird_list[bird_index]
