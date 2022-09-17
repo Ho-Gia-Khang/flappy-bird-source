@@ -186,9 +186,11 @@ while running:
             pipe_list = move_pipe(pipe_list)
 
             # score
-            score += 0.01
+            for pipe in pipe_list:
+                if abs(bird_pos.centerx - pipe.centerx) == 41:
+                    score += 0.5
+                    score_count -= 1
             score_display('running')
-            score_count -= 0.01
             if score_count <= 0:
                 score_sound.play()
                 score_count = 1
